@@ -1,0 +1,21 @@
+﻿<Window x:Class="FinalProjectTabor_PetStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTabor_PetStore"
+        mc:Ignorable="d"
+        Title="Pet Store" Height="334.387" Width="743.083" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="PetsListBox" HorizontalAlignment="Left" Height="225" Margin="10,41,0,0" VerticalAlignment="Top" Width="772" MouseDoubleClick="PetsListBox_MouseDoubleClick"/>
+        <Label Content="Pets" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Buy Pet" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="PlayWithPetButton" Content="Play with Pet" HorizontalAlignment="Left" Margin="87,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.807,0.615" Click="PlayWithPetButton_Click"/>
+        <Button x:Name="BathroomButton" Content="Bathroom" HorizontalAlignment="Left" Margin="247,13,0,0" VerticalAlignment="Top" Width="75" Click="BathroomButton_Click"/>
+        <Button x:Name="FeedPetButton" Content="Feed Pet" HorizontalAlignment="Left" Margin="167,13,0,0" VerticalAlignment="Top" Width="75" Click="FeedPetButton_Click"/>
+        <Button x:Name="HelpSleepButton" Content="Sleep" HorizontalAlignment="Left" Margin="327,13,0,0" VerticalAlignment="Top" Width="75" Click="HelpSleepButton_Click"/>
+        <Button x:Name="SavePetsButton" Content="Save Pets" HorizontalAlignment="Left" Margin="264,271,0,0" VerticalAlignment="Top" Width="75" Click="SavePetsButton_Click"/>
+        <Button x:Name="LoadPetsButton" Content="Load Pets" HorizontalAlignment="Left" Margin="344,271,0,0" VerticalAlignment="Top" Width="75" Click="LoadPetsButton_Click"/>
+
+    </Grid>
+</Window>
