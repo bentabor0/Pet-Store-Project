@@ -55,7 +55,7 @@ namespace FinalProjectTabor_PetStore
             }
             else
             {
-                HappinessLevel -= 1;
+                HappinessLevel -= 2;
             }
 
             // Animal will eat if hunger level reaches 100.
@@ -65,7 +65,7 @@ namespace FinalProjectTabor_PetStore
             }
             else
             {
-                HungerLevel += 1;
+                HungerLevel += 2;
             }
 
             // Animal will use bathroom  if bathroom level reaches 100.
@@ -75,7 +75,7 @@ namespace FinalProjectTabor_PetStore
             }
             else
             {
-                BathroomLevel += 1;
+                BathroomLevel += 2;
             }
 
             // Animal will take a nap when energy level reaches 0.
@@ -85,7 +85,7 @@ namespace FinalProjectTabor_PetStore
             }
             else
             {
-                EnergyLevel -= 1;
+                EnergyLevel -= 2;
             }
 
             NotifyObservers();
@@ -93,7 +93,7 @@ namespace FinalProjectTabor_PetStore
 
         public void SetTimer()
         {
-            this.Timer = new System.Timers.Timer(2000);
+            this.Timer = new System.Timers.Timer(5000);
             this.Timer.Elapsed += Timer_Elapsed;
             this.Timer.Start();
         }
